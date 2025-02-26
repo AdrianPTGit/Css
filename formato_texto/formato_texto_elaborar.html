@@ -21,14 +21,30 @@ body{
   color: #003;/* color */
   font-family: Arial, Helvetica, sans-serif; /* tipo fuente */
   font-size: 62%; /* tamano fuente*/
+  background: #09f url(imagenes/fondo_div.png) repeat-x;/*color fondo pagina*/
+
 }
 
+#principal{
+  width: 740px;/*ancho div*/
+  margin: auto;/*centra el div*/
+  border: 4px solid white;
+  padding: 0 10px;/*superior e inferior 0px, izq der 10px*/
+  background: url(imagenes/fondo.jpg) no-repeat;
+}
 #principal h1{
   color: #f30;
   font-family: "Arial Black", Arial, Helvetica, sans-serif;/*si Arial Black no existe utiliza Arial, etc*/
   font-size: 4em;/*multiplca el tamano (16px * 4 = 40px)*/
 
 }
+#principal h1 strong{
+  color: white;
+  font-size:  150px;
+  margin-right: -1em;
+
+}
+
 #principal h2{
   font: bold 3.5em "Hoefler Text", Garamond, Times,serif;/* propiedades abreviadas, negrita (bold), tamano(3.5em) y tipo fuente ("Hoefler Text", Garamond, Times,serif)*/
   border-bottom: 1px solid #000;
@@ -53,8 +69,34 @@ body{
 
 #principal p:first-line{
   font-weight: bold;
-  color: #666;
+  color: #000;
+  
 }
+
+#principal ul{
+  margin: 50px 0px 25px 50px;/*superior, derecho, inferior, iquierdo*/
+  width: 160px;/*ancho lista*/
+  float: right;
+  
+}
+
+#principal{
+  color: darkblue;
+  font-size: 1.5em;
+  margin-bottom: 7px;
+}
+
+#principal .autor{
+  font-size: 1.6em;
+  margin: 5px 0px 25px 50px;
+}
+
+#principal .autor strong{
+  color: red;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
 </style>
   </head>
 
@@ -62,7 +104,7 @@ body{
     <div id="principal">
       <h1><strong>CSS</strong> El curso total</h1>
       <h2>Cambiando el formato al texto</h2>
-      <p>23 Julio <strong>Píldoras informáticas</strong></p>
+      <p class="autor">23 Julio <strong>Adrian Pomareta</strong></p>
       <ul>
         <li>Lorem Ipsum</li>
         <li>Reprehenderit qui in ea</li>
