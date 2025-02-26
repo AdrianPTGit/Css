@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/principal.css">
+    <title>Estilo CSS Tablas</title>
+    <style>
+        #inventario{
+            font-family: "Trebuchet", Arial, Helvetica, sans-serif;
+            width: 75%;/*la tabla siempre ocupara el 100% del ancho de su div*/
+            border-collapse: collapse;
+        }
+        
+        #inventario caption{
+            font-size: 1.4em;
+            text-align: right;
+            padding-top: 25px;
+
+        }
+
+        #inventario td, #inventario th{
+            font-size: 1.4em;
+            border: 1px solid #039;
+            padding: 3px 7px 2px 7px;
+        }
+
+        #inventario th{
+            padding-top: 10px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            text-align: left;
+            background: url(imagenes/bg_th.png) no-repeat;
+            color: white;
+        }
+        #inventario tr.alternas td{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        
+        <table id="inventario" width="100%">
+        <caption>
+       Tabla 1. En almacén
+        </caption>
+      
+          <tr>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Calificación</th>
+          </tr>
+          <tr class="alternas">
+            <td> Romero</td>
+            <td>20.90 €</td>
+            <td class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"><img src="imagenes/star.png" width="16" height="16" alt="star"><img src="imagenes/star.png" width="16" height="16" alt="star"><img src="imagenes/star.png" width="16" height="16" alt="star"></td>
+          </tr>
+          <tr>
+            <td> Tomillo</td>
+            <td>15.50 €</td>
+            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+          </tr>
+          <tr class="alternas">
+            <td>Llantén</td>
+            <td>18.20 €</td>
+            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+          </tr>
+          <tr>
+            <td>Salvia</td>
+            <td>15.25 €</td>
+            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+          </tr>
+          <tr class="alternas">
+            <td>Aloe Vera</td>
+            <td>26.30 €</td>
+            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+          </tr>
+          <tr>
+            <td>Ruda</td>
+            <td>15.25 €</td>
+            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+          </tr>
+          <tr class="alternas">
+            <td> Albahaca</td>
+            <td>1.95 €</td>
+            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+          </tr>
+          <tr>
+            <td>Limón</td>
+            <td>35.20 €</td>
+            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+          </tr>
+          <tr class="alternas">
+            <td>Lino</td>
+            <td>45 €</td>
+            <td><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span><span class="rating"><img src="imagenes/star.png" width="16" height="16" alt="star"></span></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+      </div>
+</body>
+</html>
